@@ -1,0 +1,68 @@
+body {
+margin: 0;
+padding: 0;
+background-color: rgb(95, 99, 99);
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: 260px 1fr 1fr 1fr;
+    
+    grid-template-areas: 
+    "sidebar logo logo logo"
+    "sidebar main main main";
+    height: 100vh;
+}
+
+.logo {
+   grid-area: logo;
+   border-radius: 10px;
+   text-align: center;
+   padding: 100px;
+   height: 100px;
+   font-size: xx-large;
+   color: blueviolet;
+   background-color: rgb(59, 14, 49);
+}
+
+#sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    background-color: rgb(151, 141, 147);
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.main-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+    color: rgb(196, 191, 191);
+}
+
+
+.image-container {
+     position: relative;
+     border-radius: 10px;
+     transition: left 2s;
+     -webkit-transition: left 2s;
+     -moz-transition: left 2s;
+     -o-transition: left 2s;
+}
+
+.slider-image {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.slider-button {
+     display: inline block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(82, 82, 71);
+}
